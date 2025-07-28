@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  /* background-image: linear-gradient(to bottom right, #00C0FF, #4218B8); */
+  --fancy-grad:  -webkit-linear-gradient(90deg, #ceddd6,#b9babf,#f1bfa4);background: linear-gradient(90deg, #ceddd6,#b9babf,#f1bfa4);
+    background: var(--fancy-grad);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto; /* или 'scroll' - включает скролл всегда */
+}
+
+/* Запрещаем скролл для всех внутренних элементов */
+.container,
+.content,
+.inner-element {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #cccccc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #57bbf5;
+  border-radius: 10px;
+}
