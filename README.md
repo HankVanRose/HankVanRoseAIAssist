@@ -35,7 +35,7 @@ VITE_API_STRAIGHT=http://localhost:3000/api
 PORT=3000
 
 
-DB=postgres://<userName>:<password>@localhost:5432/<BdName>
+DB=postgres://'userName':'password'@localhost:5432/'BdName'
 
 
 
